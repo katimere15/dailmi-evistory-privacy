@@ -3,65 +3,122 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="클레임노트 앱 개인정보처리방침">
   <title>클레임노트 개인정보처리방침</title>
   <style>
-    body { margin: 0; color: #202124; background: #f7f8fa; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.7; }
-    main { max-width: 760px; margin: 0 auto; padding: 40px 24px 72px; background: #fff; }
-    h1 { margin-bottom: 4px; font-size: 2rem; }
-    h2 { margin-top: 36px; font-size: 1.25rem; }
-    table { width: 100%; border-collapse: collapse; }
-    th, td { padding: 10px; border: 1px solid #dadce0; text-align: left; vertical-align: top; }
-    th { background: #f1f3f4; }
-    .muted { color: #5f6368; }
+    :root { color-scheme: light; --bg: #f5f7fa; --surface: #fff; --text: #1f2937; --muted: #64748b; --line: #dbe2ea; --accent: #2457c5; --notice: #f1f5f9; }
+    * { box-sizing: border-box; }
+    body { margin: 0; color: var(--text); background: var(--bg); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", sans-serif; font-size: 16px; line-height: 1.75; word-break: keep-all; overflow-wrap: anywhere; }
+    main { width: min(100%, 860px); min-height: 100vh; margin: 0 auto; padding: 48px 36px 80px; background: var(--surface); }
+    h1 { margin: 0 0 4px; font-size: clamp(1.75rem, 5vw, 2.25rem); line-height: 1.3; }
+    h2 { margin: 44px 0 12px; font-size: 1.3rem; line-height: 1.45; }
+    p { margin: 10px 0; }
+    ul { margin: 8px 0; padding-left: 24px; }
+    li + li { margin-top: 6px; }
+    a { color: var(--accent); }
+    table { width: 100%; margin: 16px 0; border-collapse: collapse; font-size: .94rem; }
+    th, td { padding: 12px; border: 1px solid var(--line); text-align: left; vertical-align: top; }
+    th { background: var(--notice); }
+    .muted { color: var(--muted); }
+    .notice { margin: 18px 0; padding: 16px 18px; border-radius: 10px; background: var(--notice); }
+    .table-wrap { overflow-x: auto; }
+    footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; }
+    @media (max-width: 640px) { main { padding: 32px 20px 56px; } th, td { min-width: 130px; padding: 10px; } }
   </style>
 </head>
 <body>
 <main>
   <h1>클레임노트 개인정보처리방침</h1>
-  <p class="muted">시행일: 2026년 9월 3일</p>
+  <p class="muted">시행일: 2026년 9월 3일 · 최종 수정일: 2026년 9월 3일</p>
 
-  <p>유청환(이하 “운영자”)은 사용자의 개인정보를 중요하게 생각하며, 클레임노트 앱(이하 “앱”)에서 처리되는 정보와 보호 방법을 다음과 같이 안내합니다.</p>
+  <p>유청환(이하 “운영자”)은 클레임노트 앱(이하 “앱”) 이용자의 개인정보를 중요하게 생각하며, 앱에서 처리되는 정보와 보호 방법을 다음과 같이 안내합니다.</p>
+
+  <div class="notice">
+    <strong>핵심 안내</strong><br>
+    사용자가 작성한 사건 기록과 증빙 원본은 기기 내부 앱 전용 저장공간에 보관됩니다. 운영자는 자체 서버를 운영하지 않으며, 사건 기록을 자체 서버로 수집하거나 열람하지 않습니다. 다만 앱 품질 분석, 오류 확인 및 광고 제공을 위해 아래에 안내한 Google 서비스가 별도의 기술 정보를 처리할 수 있습니다.
+  </div>
 
   <h2>1. 사용자가 작성한 사건 자료</h2>
-  <p>사건명, 업체명, 문제 내용, 타임라인, 담당자, 연락처, 접수번호, 사진, 문서, PDF 및 음성파일 등 사용자가 앱에 등록한 사건 자료는 기기 내부 앱 전용 저장공간에 보관됩니다. 운영자는 이를 자체 서버로 수집하거나 열람하지 않습니다.</p>
-  <p>앱을 삭제하거나 기기를 분실·초기화하면 자료를 복구할 수 없을 수 있습니다. 사용자가 PDF 저장 또는 공유 기능을 실행하면 선택한 외부 앱이나 저장 위치로 자료가 전달되며, 이후 처리는 해당 서비스의 방침을 따릅니다.</p>
-
-  <h2>2. 수집·처리되는 정보</h2>
-  <table>
-    <thead><tr><th>구분</th><th>항목</th><th>목적</th></tr></thead>
-    <tbody>
-      <tr><td>앱 이용 정보</td><td>콘텐츠가 포함되지 않은 기능 이용 이벤트, 앱 버전, 기기 및 운영체제 정보, 앱 설치 식별자</td><td>기능 이용 현황 파악 및 앱 품질 개선</td></tr>
-      <tr><td>오류 정보</td><td>충돌 시각, 오류 유형과 스택 추적, 앱 버전, 기기 모델, 운영체제 정보, Crashlytics 설치 식별자</td><td>오류 분석 및 안정성 개선</td></tr>
-      <tr><td>의견 메일</td><td>사용자가 메일에 직접 작성한 내용, 앱 버전 및 운영체제 정보, 회신 이메일 주소</td><td>문의 접수와 답변</td></tr>
-      <tr><td>구매 정보</td><td>Google Play가 제공하는 구매 상태와 상품 식별자</td><td>Lifetime Pro 구매 및 복원 확인</td></tr>
-    </tbody>
-  </table>
-  <p>운영자는 Analytics 또는 Crashlytics 이벤트에 사건명, 업체명, 사건 내용, 담당자, 연락처, 접수번호, 증빙 파일명·경로·내용을 의도적으로 포함하지 않습니다.</p>
-
-  <h2>3. 처리 방법과 외부 서비스</h2>
-  <p>앱은 Google LLC의 Firebase Analytics 및 Firebase Crashlytics를 이용합니다. 이 과정에서 앱 설치 식별자, 이용 이벤트, 충돌 및 기기 정보가 Google의 글로벌 인프라에서 처리될 수 있습니다. Google의 처리 및 보관 방식은 Firebase 개인정보 및 보안 문서를 따릅니다.</p>
-  <p>앱 내 구매는 Google Play를 통해 처리됩니다. 운영자는 사용자의 카드번호나 계좌정보를 직접 수집하거나 보관하지 않습니다.</p>
-
-  <h2>4. 보유 및 삭제</h2>
+  <p>사건명, 업체명, 문제 내용, 원하는 해결 방법, 타임라인, 담당자, 연락처, 접수번호, 다음 행동, 사진, 이미지, 문서, PDF 및 음성파일 등 사용자가 앱에 등록한 자료는 기기 내부 앱 전용 저장공간에 보관됩니다.</p>
   <ul>
-    <li>기기 내부 사건 자료: 사용자가 앱에서 삭제하거나 앱을 제거할 때까지 보관됩니다.</li>
-    <li>Firebase 정보: Google/Firebase의 설정 및 보관 정책에 따라 보관 후 삭제됩니다.</li>
-    <li>의견 메일: 문의 처리와 분쟁 대응에 필요한 기간 동안 보관하며, 사용자의 삭제 요청이 있으면 관련 법령상 보관 의무가 없는 범위에서 삭제합니다.</li>
-    <li>구매 기록: Google Play 및 관련 법령의 정책에 따라 처리됩니다.</li>
+    <li>운영자는 해당 자료를 자체 서버로 수집하거나 원격으로 열람하지 않습니다.</li>
+    <li>운영자는 해당 자료를 광고 맞춤설정이나 광고 요청 정보로 사용하지 않습니다.</li>
+    <li>앱을 삭제하거나 기기를 분실·초기화하면 자료를 복구할 수 없을 수 있습니다.</li>
+    <li>사용자가 PDF 저장 또는 공유를 실행하면 선택한 저장 위치나 외부 앱으로 자료가 전달되며, 이후 처리는 해당 서비스의 개인정보처리방침을 따릅니다.</li>
   </ul>
 
-  <h2>5. 권한 사용</h2>
-  <p>앱은 사용자가 직접 선택한 사진과 파일을 가져오고, 다음 행동 알림을 제공하는 데 필요한 범위에서만 기기 기능과 권한을 사용합니다. 알림 권한이 거부되어도 사건 기록은 저장할 수 있습니다.</p>
+  <h2>2. 처리하는 정보와 이용 목적</h2>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>구분</th><th>처리될 수 있는 항목</th><th>이용 목적</th><th>처리 서비스</th></tr></thead>
+      <tbody>
+        <tr><td>앱 활동</td><td>앱 실행, 화면 또는 기능 이용, 버튼 선택, PDF 저장·공유 및 광고 표시 여부 등 사용자 콘텐츠를 포함하지 않는 이용 이벤트</td><td>이용 현황 분석, 기능 및 사용성 개선</td><td>Firebase Analytics</td></tr>
+        <tr><td>앱 정보 및 성능</td><td>충돌 시각, 오류 유형, 정제된 스택 추적, 앱 상태, 앱 버전, 기기 모델, 운영체제 정보, 앱 실행·응답 및 기타 진단 정보</td><td>오류 분석, 앱 안정성 및 성능 개선</td><td>Firebase Crashlytics, Firebase Sessions</td></tr>
+        <tr><td>기기 또는 기타 식별자</td><td>Firebase 설치 식별자, 앱 세트 ID, 광고 ID 등 기기·앱 인스턴스 관련 식별자</td><td>분석, 광고 제공·측정, 부정행위 방지</td><td>Firebase, Google Mobile Ads</td></tr>
+        <tr><td>네트워크 및 대략적 위치 관련 정보</td><td>IP 주소, 통신 상태 등 네트워크 관련 정보. IP 주소를 통해 국가·도시 수준의 대략적 위치가 추정될 수 있음</td><td>광고 제공, 분석, 보안 및 부정행위 방지</td><td>Google Mobile Ads</td></tr>
+        <tr><td>광고 상호작용</td><td>광고 노출, 조회, 선택 및 광고 SDK와의 상호작용 정보</td><td>광고 제공, 광고 성과 측정 및 부정행위 방지</td><td>Google Mobile Ads</td></tr>
+        <tr><td>의견 메일</td><td>사용자가 메일 앱에서 직접 작성한 내용, 회신 이메일 주소, 앱 버전 및 운영체제 정보</td><td>문의 접수, 답변 및 문제 해결</td><td>사용자가 선택한 메일 서비스, 운영자 이메일</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>위 기술 정보는 앱 또는 사용된 SDK가 자동으로 생성·수집할 수 있습니다. 운영자는 Analytics 이벤트와 광고 요청에 사건명, 업체명, 문제 내용, 타임라인, 담당자, 연락처, 접수번호, Case ID, 증빙 파일명·경로·내용, PDF 내용 또는 음성 내용을 의도적으로 포함하지 않습니다.</p>
 
-  <h2>6. 아동의 개인정보</h2>
-  <p>앱은 아동을 대상으로 설계되지 않았으며, 운영자는 아동의 개인정보를 의도적으로 수집하지 않습니다.</p>
+  <h2>3. 외부 서비스 제공자 및 정보 전송</h2>
+  <p>앱은 Google LLC가 제공하는 다음 서비스를 사용합니다. 각 서비스는 서비스 제공에 필요한 정보를 자체 개인정보처리방침에 따라 처리할 수 있습니다.</p>
+  <ul>
+    <li><strong>Firebase Analytics:</strong> 앱 이용 통계와 기능 개선</li>
+    <li><strong>Firebase Crashlytics 및 Firebase Sessions:</strong> 충돌·오류·세션 진단과 안정성 개선</li>
+    <li><strong>Google Mobile Ads(AdMob):</strong> 전면 광고 제공, 광고 성과 측정 및 부정행위 방지</li>
+  </ul>
+  <p>자세한 내용은 <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google 개인정보처리방침</a>, <a href="https://firebase.google.com/support/privacy" rel="noopener noreferrer">Firebase 개인정보 보호 및 보안 안내</a>, <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure" rel="noopener noreferrer">Google Mobile Ads 데이터 공개 안내</a>에서 확인할 수 있습니다.</p>
 
-  <h2>7. 이용자의 선택과 문의</h2>
-  <p>사용자는 앱에서 사건 및 증빙을 삭제할 수 있으며, 앱을 삭제하여 기기 내부 앱 데이터를 제거할 수 있습니다. 개인정보 처리 관련 문의 또는 의견 메일 삭제 요청은 아래 연락처로 접수할 수 있습니다.</p>
-  <p><strong>운영 주체:</strong> 유청환<br><strong>이메일:</strong> <a href="mailto:chyou960118@gmail.com">chyou960118@gmail.com</a></p>
+  <h2>4. 국외 처리</h2>
+  <p>Firebase 및 Google Mobile Ads 이용 과정에서 기술 정보가 네트워크를 통해 Google LLC 및 Google의 처리업체가 운영하는 대한민국 외 지역의 서버로 전송·처리될 수 있습니다.</p>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>관련 사업자</th><th>이전 국가·시점 및 방법</th><th>이전 항목과 목적</th><th>보유 기간</th></tr></thead>
+      <tbody>
+        <tr><td>Google LLC 및 Google의 처리업체</td><td>미국을 포함한 Google의 글로벌 인프라 소재 국가로, 앱 이용 중 암호화된 네트워크를 통해 전송</td><td>제2조의 앱 활동, 앱 정보·성능, 식별자, 네트워크·광고 상호작용 정보 / 분석, 오류 진단, 광고 제공·측정, 보안 및 부정행위 방지</td><td>각 서비스 설정, 계약 및 Google의 보관 정책에 따른 기간</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p>Google의 서버 위치와 처리업체는 서비스 운영에 따라 달라질 수 있으며, 최신 정보는 Google의 개인정보 관련 안내에서 확인할 수 있습니다.</p>
 
-  <h2>8. 방침 변경</h2>
-  <p>기능이나 데이터 처리 방식이 변경되면 이 방침을 수정하고 시행일을 갱신합니다. 중요한 변경은 앱 또는 스토어 등록정보를 통해 안내합니다.</p>
+  <h2>5. 보유 기간 및 삭제</h2>
+  <ul>
+    <li><strong>기기 내부 사건 자료:</strong> 사용자가 앱에서 삭제하거나 앱을 제거할 때까지 기기에 보관됩니다.</li>
+    <li><strong>Analytics·Crashlytics·Sessions 정보:</strong> 운영자가 설정한 기간과 Google/Firebase의 보관 정책에 따라 보관 후 삭제됩니다.</li>
+    <li><strong>광고 관련 정보:</strong> Google Mobile Ads의 설정 및 보관 정책에 따라 처리·삭제됩니다.</li>
+    <li><strong>의견 메일:</strong> 문의 처리와 분쟁 대응에 필요한 기간 동안 보관하며, 삭제 요청을 받으면 관계 법령상 보관 의무가 없는 범위에서 지체 없이 삭제합니다.</li>
+  </ul>
+  <p>법령에 따라 일정 기간 보관해야 하는 정보가 있는 경우에는 해당 기간 동안 별도로 보관한 뒤 삭제합니다.</p>
+
+  <h2>6. 이용자의 선택과 통제</h2>
+  <ul>
+    <li>사건, 타임라인 및 증빙은 앱 안에서 삭제할 수 있습니다.</li>
+    <li>앱을 제거하면 기기 내부 앱 전용 저장공간의 자료를 삭제할 수 있습니다.</li>
+    <li>Android 설정에서 광고 ID를 삭제·재설정하거나 광고 개인정보 보호 설정을 변경할 수 있습니다.</li>
+    <li>기기 설정에서 알림 권한을 변경할 수 있으며, 알림을 허용하지 않아도 사건 기록 기능은 사용할 수 있습니다.</li>
+    <li>운영자가 보유한 의견 메일의 열람·정정·삭제 또는 개인정보 처리 관련 문의는 제10조의 연락처로 요청할 수 있습니다.</li>
+  </ul>
+
+  <h2>7. 기기 권한 사용</h2>
+  <p>앱은 사용자가 직접 선택한 사진·이미지·PDF·문서·음성파일을 앱으로 가져오고, 다음 행동 알림을 제공하는 데 필요한 범위에서 기기 기능과 권한을 사용합니다. 사용자가 선택하지 않은 사건 자료를 임의로 가져오지 않으며, 알림 권한이 거부되어도 사건과 다음 행동을 저장할 수 있습니다.</p>
+
+  <h2>8. 개인정보의 안전성 확보</h2>
+  <p>운영자는 사용자 사건 자료를 앱 전용 저장공간에 보관하고, 외부 SDK 이벤트에 사용자 작성 내용을 전달하지 않도록 기능 이벤트를 제한합니다. 외부 서비스로 전송되는 정보는 해당 SDK가 지원하는 암호화된 통신 방식으로 전송됩니다. 다만 사용자는 기기 잠금, 운영체제 업데이트 등 기기 자체의 보안 수단도 함께 사용하는 것이 좋습니다.</p>
+
+  <h2>9. 아동의 개인정보</h2>
+  <p>앱은 아동을 대상으로 설계되지 않았으며, 운영자는 아동의 개인정보를 의도적으로 수집하지 않습니다. 아동의 정보가 의견 메일 등을 통해 전달된 사실을 알게 된 경우 아래 연락처로 삭제를 요청할 수 있습니다.</p>
+
+  <h2>10. 개인정보 보호 문의</h2>
+  <p>개인정보 처리, 이용자의 권리 행사 또는 의견 메일 삭제에 관한 문의는 아래 연락처로 접수할 수 있습니다.</p>
+  <p><strong>운영 주체 및 개인정보 보호 담당자:</strong> 유청환<br><strong>이메일:</strong> <a href="mailto:chyou960118@gmail.com">chyou960118@gmail.com</a></p>
+
+  <h2>11. 개인정보처리방침 변경</h2>
+  <p>앱 기능이나 데이터 처리 방식이 변경되면 이 방침을 수정하고 시행일과 최종 수정일을 갱신합니다. 중요한 변경이 있는 경우 앱, 이 페이지 또는 스토어 등록정보를 통해 안내합니다.</p>
+
+  <footer>클레임노트 개인정보처리방침 · 문의: chyou960118@gmail.com</footer>
 </main>
 </body>
 </html>
