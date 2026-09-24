@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="클레임노트 앱 개인정보처리방침">
-  <title>클레임노트 개인정보처리방침</title>
+  <meta name="description" content="에브스토리(Evistory) 앱 개인정보처리방침">
+  <title>에브스토리(Evistory) 개인정보처리방침</title>
   <style>
     :root { color-scheme: light; --bg: #f5f7fa; --surface: #fff; --text: #1f2937; --muted: #64748b; --line: #dbe2ea; --accent: #2457c5; --notice: #f1f5f9; }
     * { box-sizing: border-box; }
@@ -28,14 +28,14 @@
 </head>
 <body>
 <main>
-  <h1>클레임노트 개인정보처리방침</h1>
-  <p class="muted">시행일: 2026년 9월 3일 · 최종 수정일: 2026년 9월 3일</p>
+  <h1>에브스토리(Evistory) 개인정보처리방침</h1>
+  <p class="muted">시행일: 2026년 9월 24일 · 최종 수정일: 2026년 9월 24일</p>
 
-  <p>유청환(이하 “운영자”)은 클레임노트 앱(이하 “앱”) 이용자의 개인정보를 중요하게 생각하며, 앱에서 처리되는 정보와 보호 방법을 다음과 같이 안내합니다.</p>
+  <p>유청환(이하 “운영자”)은 dailmi의 에브스토리(Evistory, com.dailmi.evistory) 앱(이하 “앱”) 이용자의 개인정보를 중요하게 생각하며, 앱에서 처리되는 정보와 보호 방법을 다음과 같이 안내합니다.</p>
 
   <div class="notice">
     <strong>핵심 안내</strong><br>
-    사용자가 작성한 사건 기록과 증빙 원본은 기기 내부 앱 전용 저장공간에 보관됩니다. 운영자는 자체 서버를 운영하지 않으며, 사건 기록을 자체 서버로 수집하거나 열람하지 않습니다. 다만 앱 품질 분석, 오류 확인 및 광고 제공을 위해 아래에 안내한 Google 서비스가 별도의 기술 정보를 처리할 수 있습니다.
+    사용자가 작성한 사건 기록과 증빙 원본은 기기 내부 앱 전용 저장공간에 보관됩니다. 운영자는 자체 서버를 운영하지 않으며, 사건 기록을 자체 서버로 수집하거나 열람하지 않습니다. Firebase Analytics와 Crashlytics를 사용하지 않습니다. PDF 미리보기 화면의 배너 광고를 위해 Google Mobile Ads SDK가 아래 기술 정보를 처리할 수 있습니다. 광고가 표시되지 않아도 PDF 저장·공유 기능을 사용할 수 있습니다.
   </div>
 
   <h2>1. 사용자가 작성한 사건 자료</h2>
@@ -52,33 +52,31 @@
     <table>
       <thead><tr><th>구분</th><th>처리될 수 있는 항목</th><th>이용 목적</th><th>처리 서비스</th></tr></thead>
       <tbody>
-        <tr><td>앱 활동</td><td>앱 실행, 화면 또는 기능 이용, 버튼 선택, PDF 저장·공유 및 광고 표시 여부 등 사용자 콘텐츠를 포함하지 않는 이용 이벤트</td><td>이용 현황 분석, 기능 및 사용성 개선</td><td>Firebase Analytics</td></tr>
-        <tr><td>앱 정보 및 성능</td><td>충돌 시각, 오류 유형, 정제된 스택 추적, 앱 상태, 앱 버전, 기기 모델, 운영체제 정보, 앱 실행·응답 및 기타 진단 정보</td><td>오류 분석, 앱 안정성 및 성능 개선</td><td>Firebase Crashlytics, Firebase Sessions</td></tr>
-        <tr><td>기기 또는 기타 식별자</td><td>Firebase 설치 식별자, 앱 세트 ID, 광고 ID 등 기기·앱 인스턴스 관련 식별자</td><td>분석, 광고 제공·측정, 부정행위 방지</td><td>Firebase, Google Mobile Ads</td></tr>
+        <tr><td>앱 상호작용</td><td>광고 SDK가 처리하는 앱 실행, 탭, 광고 조회 등의 상호작용</td><td>광고 제공·측정, 분석 및 부정행위 방지</td><td>Google Mobile Ads</td></tr>
+        <tr><td>앱 정보 및 성능</td><td>앱 시작 시간, 응답 지연, 에너지 사용량 등 앱과 광고 SDK의 진단 정보</td><td>광고 제공·측정, 분석 및 부정행위 방지</td><td>Google Mobile Ads</td></tr>
+        <tr><td>기기 또는 기타 식별자</td><td>광고 ID, 앱 세트 ID 및 해당하는 경우 기기 계정 관련 식별자</td><td>광고 제공·측정, 분석 및 부정행위 방지</td><td>Google Mobile Ads</td></tr>
         <tr><td>네트워크 및 대략적 위치 관련 정보</td><td>IP 주소, 통신 상태 등 네트워크 관련 정보. IP 주소를 통해 국가·도시 수준의 대략적 위치가 추정될 수 있음</td><td>광고 제공, 분석, 보안 및 부정행위 방지</td><td>Google Mobile Ads</td></tr>
         <tr><td>광고 상호작용</td><td>광고 노출, 조회, 선택 및 광고 SDK와의 상호작용 정보</td><td>광고 제공, 광고 성과 측정 및 부정행위 방지</td><td>Google Mobile Ads</td></tr>
         <tr><td>의견 메일</td><td>사용자가 메일 앱에서 직접 작성한 내용, 회신 이메일 주소, 앱 버전 및 운영체제 정보</td><td>문의 접수, 답변 및 문제 해결</td><td>사용자가 선택한 메일 서비스, 운영자 이메일</td></tr>
       </tbody>
     </table>
   </div>
-  <p>위 기술 정보는 앱 또는 사용된 SDK가 자동으로 생성·수집할 수 있습니다. 운영자는 Analytics 이벤트와 광고 요청에 사건명, 업체명, 문제 내용, 타임라인, 담당자, 연락처, 접수번호, Case ID, 증빙 파일명·경로·내용, PDF 내용 또는 음성 내용을 의도적으로 포함하지 않습니다.</p>
+  <p>위 기술 정보는 광고 SDK가 자동으로 생성·수집·공유할 수 있습니다. 운영자는 별도 이용 분석 이벤트나 원격 충돌 보고를 수집하지 않습니다. 사건명, 업체명, 문제 내용, 타임라인, 담당자, 연락처, 접수번호, Case ID, 증빙 파일명·경로·내용, PDF 내용 또는 음성 내용을 광고 요청이나 진단 로그에 포함하지 않습니다.</p>
 
   <h2>3. 외부 서비스 제공자 및 정보 전송</h2>
   <p>앱은 Google LLC가 제공하는 다음 서비스를 사용합니다. 각 서비스는 서비스 제공에 필요한 정보를 자체 개인정보처리방침에 따라 처리할 수 있습니다.</p>
   <ul>
-    <li><strong>Firebase Analytics:</strong> 앱 이용 통계와 기능 개선</li>
-    <li><strong>Firebase Crashlytics 및 Firebase Sessions:</strong> 충돌·오류·세션 진단과 안정성 개선</li>
-    <li><strong>Google Mobile Ads(AdMob):</strong> 전면 광고 제공, 광고 성과 측정 및 부정행위 방지</li>
+    <li><strong>Google Mobile Ads(AdMob):</strong> PDF 미리보기 화면의 배너 광고 제공, 광고 성과 측정·분석 및 부정행위 방지</li>
   </ul>
-  <p>자세한 내용은 <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google 개인정보처리방침</a>, <a href="https://firebase.google.com/support/privacy" rel="noopener noreferrer">Firebase 개인정보 보호 및 보안 안내</a>, <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure" rel="noopener noreferrer">Google Mobile Ads 데이터 공개 안내</a>에서 확인할 수 있습니다.</p>
+  <p>자세한 내용은 <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google 개인정보처리방침</a>, <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure" rel="noopener noreferrer">Google Mobile Ads 데이터 공개 안내</a>에서 확인할 수 있습니다.</p>
 
   <h2>4. 국외 처리</h2>
-  <p>Firebase 및 Google Mobile Ads 이용 과정에서 기술 정보가 네트워크를 통해 Google LLC 및 Google의 처리업체가 운영하는 대한민국 외 지역의 서버로 전송·처리될 수 있습니다.</p>
+  <p>Google Mobile Ads 이용 과정에서 기술 정보가 네트워크를 통해 Google LLC 및 Google의 처리업체가 운영하는 대한민국 외 지역의 서버로 전송·처리될 수 있습니다.</p>
   <div class="table-wrap">
     <table>
       <thead><tr><th>관련 사업자</th><th>이전 국가·시점 및 방법</th><th>이전 항목과 목적</th><th>보유 기간</th></tr></thead>
       <tbody>
-        <tr><td>Google LLC 및 Google의 처리업체</td><td>미국을 포함한 Google의 글로벌 인프라 소재 국가로, 앱 이용 중 암호화된 네트워크를 통해 전송</td><td>제2조의 앱 활동, 앱 정보·성능, 식별자, 네트워크·광고 상호작용 정보 / 분석, 오류 진단, 광고 제공·측정, 보안 및 부정행위 방지</td><td>각 서비스 설정, 계약 및 Google의 보관 정책에 따른 기간</td></tr>
+        <tr><td>Google LLC 및 Google의 처리업체</td><td>미국을 포함한 Google의 글로벌 인프라 소재 국가로, 광고 SDK 이용 중 암호화된 네트워크를 통해 전송</td><td>제2조의 앱 상호작용, 진단 정보, 식별자, 네트워크·광고 상호작용 정보 / 광고 제공·측정, 분석 및 부정행위 방지</td><td>Google의 보관 정책에 따른 기간</td></tr>
       </tbody>
     </table>
   </div>
@@ -87,7 +85,6 @@
   <h2>5. 보유 기간 및 삭제</h2>
   <ul>
     <li><strong>기기 내부 사건 자료:</strong> 사용자가 앱에서 삭제하거나 앱을 제거할 때까지 기기에 보관됩니다.</li>
-    <li><strong>Analytics·Crashlytics·Sessions 정보:</strong> 운영자가 설정한 기간과 Google/Firebase의 보관 정책에 따라 보관 후 삭제됩니다.</li>
     <li><strong>광고 관련 정보:</strong> Google Mobile Ads의 설정 및 보관 정책에 따라 처리·삭제됩니다.</li>
     <li><strong>의견 메일:</strong> 문의 처리와 분쟁 대응에 필요한 기간 동안 보관하며, 삭제 요청을 받으면 관계 법령상 보관 의무가 없는 범위에서 지체 없이 삭제합니다.</li>
   </ul>
@@ -118,7 +115,7 @@
   <h2>11. 개인정보처리방침 변경</h2>
   <p>앱 기능이나 데이터 처리 방식이 변경되면 이 방침을 수정하고 시행일과 최종 수정일을 갱신합니다. 중요한 변경이 있는 경우 앱, 이 페이지 또는 스토어 등록정보를 통해 안내합니다.</p>
 
-  <footer>클레임노트 개인정보처리방침 · 문의: chyou960118@gmail.com</footer>
+  <footer>에브스토리(Evistory) by dailmi 개인정보처리방침 · 문의: chyou960118@gmail.com</footer>
 </main>
 </body>
 </html>
